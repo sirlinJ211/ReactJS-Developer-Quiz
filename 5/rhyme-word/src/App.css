@@ -1,0 +1,33 @@
+.app {
+  width: 80%;
+  margin: auto;
+}
+
+#input-word {
+  width: 200px;
+  height: 30px;
+}
+
+#lists {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 30px 0;
+  font-size: 25px;
+  min-height: 400px;
+}
+
+.list {
+  width: 200px;
+  height: 30px;
+  display: flex;
+  flex-direction: inline;
+  align-items: center;
+  border: 1px solid grey;
+}
+
+.list-num {
+  min-width: 45px;
+  text-align: right;
+  padding-right: 5px;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css"
+    />
+    <link rel="stylesheet" href="2.css" />
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/datepicker/1.0.10/datepicker.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+    <script>
+      $(function () {
+        $("#dateOfBirth").datepicker({ dateFormat: "MM  d,  yy" });
+      });
+    </script>
+
+    <title>React JS Developer Quiz 2</title>
+  </head>
+  <body>
+    <h1>React JS Developer Quiz 2</h1>
+    <div id="container">
+      <form action="">
+        <div class="row">
+          <label for="fullName">Your full given name: </label>
+          <input type="text" id="fullName" />
+        </div>
+        <div class="row-birthCountry">
+          <div class="col col-left">
+            <label for="dateOfBirth">Date of Birth </label>
+            <div class="inputDate" id="inputDate">
+              <input type="text" id="dateOfBirth" />
+              <img src="majesticons_calendar-line.svg" alt="" id="calendar" />
+            </div>
+          </div>
+          <div class="col col-right">
+            <label for="country">Country of residence or citizenship: </label>
+            <input type="text" id="country" />
+          </div>
+        </div>
+        <div class="row">
+          <label for="school">what school do you plan to attend? </label>
+          <input type="text" id="school" />
+        </div>
+        <div class="row">
+          <label for="describeStudyArea">
+            Please take a moment to describe your intended area of study:
+          </label>
+          <textarea
+            id="describeStudyArea"
+            placeholder="Enter details here"
+          ></textarea>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
